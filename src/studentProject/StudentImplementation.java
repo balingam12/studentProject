@@ -42,14 +42,23 @@ public class StudentImplementation implements StudentService{
 
 	@Override
 	public void updateName(int id, String newName) {
-		// TODO Auto-generated method stub
 		
+	for(Student s: listStudent) {
+		if(s.getSid()==id) {
+			s.setName(newName);
+		}
+		
+	}
 	}
 
 	@Override
 	public int countStudents() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+            int count=0;
+       for(Student s: listStudent) {
+	        count++;
+          }
+ 		return count;
 	}
 
 	
