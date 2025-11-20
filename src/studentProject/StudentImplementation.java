@@ -9,14 +9,14 @@ public class StudentImplementation implements StudentService{
 	List<Student> listStudent= new ArrayList<Student>();
 	@Override
 	public void addStudent(Student s) {
-		// TODO Auto-generated method stub
+		listStudent.add(s);
 		
 		
 	}
 
 	@Override
 	public void deleteStudent(int id) {
-		// TODO Auto-generated method stub
+		listStudent.remove(id=1);
 		
 	}
 
