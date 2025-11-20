@@ -23,13 +23,21 @@ public class StudentImplementation implements StudentService{
 	@Override
 	public Student findStudent(int id) {
 		// TODO Auto-generated method stub
-		return null;
+		Student fs=null;
+		for(Student s: listStudent)
+		{ 
+			if(s.getSid()==id) {
+				fs=s;
+			}
+		}
+		return fs;
 	}
 
 	@Override
 	public ArrayList<Student> getStudents() {
 		// TODO Auto-generated method stub
-		return null;
+		ArrayList<Student> slist=(ArrayList<Student>) listStudent;
+		return slist;
 	}
 
 	@Override
