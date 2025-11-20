@@ -1,10 +1,12 @@
 package studentProject;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class StudentImplementation implements StudentService{
 
+	List<Student> listStudent= new ArrayList<Student>();
 	@Override
 	public void addStudent(Student s) {
 		// TODO Auto-generated method stub
